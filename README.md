@@ -20,7 +20,7 @@ const el = document.createElement('div');
       el.className   = 'test1';
       el.textContent = 'addElement';
 
-nanoonload('div.test1',
+nanoonload('div.test1', // can also be a nodeElement
     (el) => { console.log('element is added'); },
     (el) => { console.log('element is removed'); }
 );

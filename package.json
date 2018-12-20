@@ -1,6 +1,6 @@
 {
   "name": "nanoonload",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "tiny wrapper around mutation observe to detect added and removed elements",
   "main": "index.js",
   "scripts": {
@@ -8,15 +8,19 @@
   },
   "devDependencies": {
     "browserify": "^13.0.0",
-    "tap-spec"  : "^4.1.0",
-    "tape-run"  : "^3.0.0",
-    "tape"      : "^4.2.1"
+    "tap-spec": "^4.1.0",
+    "tape-run": "^3.0.0",
+    "tape": "^4.2.1"
   },
   "keywords": [
     "mutation",
     "observer",
     "onload"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:moszeed/nanoonload.git"
+  },
   "author": "Michael Röber",
   "license": "MIT"
 }
