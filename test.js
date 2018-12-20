@@ -17,6 +17,22 @@ test('add/remove element to body', function(t) {
     document.body.removeChild(el);
 });
 
+test('add/remove element to body - by node', function(t) {
+
+    t.plan(2);
+    const el = document.createElement('div');
+          el.className   = 'test2';
+          el.textContent = 'addElement';
+
+    nanoonload(el,
+        (el) => { t.ok(true, 'element is added'); },
+        (el) => { t.ok(true, 'element is removed'); }
+    );
+
+    document.body.appendChild(el);
+    document.body.removeChild(el);
+});
+
 test('add/remove element to created element', function(t) {
 
     t.plan(2);
