@@ -2,8 +2,8 @@ const nanoonload = require('./')
 const test       = require('tape')
 
 test('add/remove element to body', function(t) {
-
     t.plan(2);
+
     const el = document.createElement('div');
           el.className   = 'test1';
           el.textContent = 'addElement';
@@ -18,8 +18,8 @@ test('add/remove element to body', function(t) {
 });
 
 test('add/remove element to body - by node', function(t) {
-
     t.plan(2);
+
     const el = document.createElement('div');
           el.className   = 'test2';
           el.textContent = 'addElement';
@@ -34,7 +34,6 @@ test('add/remove element to body - by node', function(t) {
 });
 
 test('add/remove element to created element', function(t) {
-
     t.plan(2);
 
     const baseElement = document.createElement('div');

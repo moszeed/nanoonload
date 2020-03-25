@@ -1,9 +1,15 @@
 (() => {
     'use strict';
 
+    const defaultConfig = {
+        childList    : true,
+        characterData: true,
+        subtree      : true
+    };
+
     function hasTarget (node = null, target = null) {
         if (typeof target === 'string') {
-            return node.matches && node.matches(target);
+            return !!node.closest(target);
         }
 
         return node.contains(target);
@@ -16,12 +22,6 @@
 
         opts.config = opts.config || {};
         opts.targetNode = opts.targetNode || document.body;
-
-        const defaultConfig = {
-            childList    : true,
-            characterData: true,
-            subtree      : true
-        };
 
         const config = Object.assign({}, defaultConfig, opts.config);
         const observer = new MutationObserver(function (mutations) {
