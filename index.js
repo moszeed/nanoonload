@@ -9,7 +9,7 @@
 
     function hasTarget (node = null, target = null) {
         if (typeof target === 'string') {
-            return !!node.closest(target);
+            return !!node.closest(target) || !!node.querySelector(target);
         }
 
         return node.contains(target);
