@@ -2,12 +2,15 @@
     'use strict';
 
     const defaultConfig = {
-        childList    : true,
-        characterData: true,
-        subtree      : true
+        childList: true,
+        subtree  : true
     };
 
     function hasTarget (node = null, target = null) {
+        if (node.nodeType !== 1) {
+            return false;
+        }
+
         if (typeof target === 'string') {
             return !!node.closest(target) || !!node.querySelector(target);
         }

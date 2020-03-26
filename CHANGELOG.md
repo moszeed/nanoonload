@@ -1,5 +1,8 @@
 # nanoonload changelog
 
+## 0.5.0
+* bugfix: only check on real nodes
+
 ## 0.4.0
 * change: deep comparsion now also search with `!!node.querySelector` if nearby is failing
 
