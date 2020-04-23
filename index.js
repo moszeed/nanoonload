@@ -12,10 +12,10 @@
         }
 
         if (typeof target === 'string') {
-            return !!node.closest(target) || !!node.querySelector(target);
+            return !!node.matches(target);
         }
 
-        return node.contains(target);
+        return node.isSameNode(target);
     }
 
     module.exports = function (target = null, cbAdded = () => {}, cbRemoved = () => {}, opts = {}) {

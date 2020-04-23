@@ -1,6 +1,6 @@
 {
   "name": "nanoonload",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "tiny wrapper around mutation observe to detect added and removed elements",
   "main": "index.js",
   "scripts": {

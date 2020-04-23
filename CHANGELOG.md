@@ -1,5 +1,8 @@
 # nanoonload changelog
 
+## 0.6.0
+* change: back to `node.matches`
+
 ## 0.5.0
 * bugfix: only check on real nodes
 
